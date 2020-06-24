@@ -1,5 +1,7 @@
 # how to
 
+Example for creating datalake buckets with subfolders
+
 1 - First Configure the AWS Provider ("provider.tf")
 
 ```tf
