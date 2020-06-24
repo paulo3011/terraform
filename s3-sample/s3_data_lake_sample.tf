@@ -11,10 +11,10 @@ resource "aws_s3_bucket_object" "stage" {
   source = ""
 }
 
-resource "aws_s3_bucket_object" "stage-firehosestream" {
+resource "aws_s3_bucket_object" "stage-stream" {
   bucket = "${aws_s3_bucket.datalake.id}"
   acl    = "private"
-  key    = "stage/firehosestream/"
+  key    = "stage/stream/"
   source = ""
 }
 
