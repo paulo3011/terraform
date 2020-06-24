@@ -1,13 +1,12 @@
 resource "aws_s3_bucket" "datalake" {
-  bucket = "m3011teste"
+  bucket = "m3011"
   region = "us-east-1"
-  //https://docs.aws.amazon.com/AmazonS3/latest/dev/acl-overview.html#canned-acl
-  acl = "private"
+  acl    = "private"
 }
 
-data "aws_s3_bucket_object" "stage" {
-  //bucket on will be create the key object
+resource "aws_s3_bucket_object" "folder1" {
   bucket = "${aws_s3_bucket.datalake.id}"
-  //path to object or folder
-  key = "stage/null"
+  acl    = "private"
+  key    = "Folder1/"
+  source = ""
 }
