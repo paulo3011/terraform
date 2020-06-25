@@ -1,2 +1,13 @@
+# ignore all . files and . folders
+# .* - This patter tells git to ignore all the files which starts with .
+.*
+
+# ignore all . folders but include . files
+#.*/
+
+#! - This tells git not to ignore the pattern. In your case /.gitignore
+!/.gitignore
+
 terraform.tfstate
 terraform.tfstate.backup
+s3-datalake-using_vars/.terraform/environment
