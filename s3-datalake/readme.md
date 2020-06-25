@@ -17,7 +17,7 @@ provider "aws" {
 ```shell
 terraform init
 ```
-3 - Set bucket name ("s3_data_lake_sample.tf")
+3 - Set bucket name ("s3_datalake.tf")
 
 ```tf
 resource "aws_s3_bucket" "datalake" {
