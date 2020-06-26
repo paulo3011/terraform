@@ -1,0 +1,9 @@
+{
+	"profile": "default",
+	"region": "sa-east-1",
+	"environment": "dev",
+	"company": "YOURCOMPANY",
+	"project": "__VarNameToTransformUsingDeployPepiLine__",
+	"product": "__VarNameToTransformUsingDeployPepiLine__",
+	"datalake_bucket_name": "moreira-lake"
+}
