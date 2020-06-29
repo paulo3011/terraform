@@ -1,7 +1,7 @@
 locals {
   # input vars can be use like this: var.varname
   # local vars can be use like this: local.varname
-  default_name = join("-", compact(list(var.product, var.environment, var.project_name)))
+  default_name = join("-", compact(list(var.product, var.environment, var.project)))
   acl                  = "private"
   S3_tags = {
     Name         = upper(local.default_name)
